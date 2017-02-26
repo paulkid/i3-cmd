@@ -167,7 +167,7 @@ int main(int argc, char *args[]) {
 		else
 			write_block(fg_clr, bg_clr, block_txt);
 
-		if (block_txt != blockln) // OBS! Bad assumption 
+		if (block_txt != blockln && strcmp(block_txt, EMPTY_BLOCK)) // OBS! This is super bad 
 			free(block_txt);
 	}	
 }
