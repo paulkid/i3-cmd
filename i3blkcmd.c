@@ -113,7 +113,7 @@ char * vol_output() {
 
 		if (tok[0] == '[' && toklen > 3) {
 
-			if (tok[2] == '%' || tok[3] == '%') {
+			if (tok[2] == '%' || tok[3] == '%' || tok[4] == '%') {
 				tok[toklen - 2] = '\0';
 				volume = atoi(tok + 1); 
 			}
